@@ -794,7 +794,7 @@ namespace PvPLife
             for (GroupReference const* ref = player->GetGroup()->GetFirstMember(); ref != nullptr; ref = ref->next())
             {
                 Player const* member = ref->GetSource();
-                if (member && member->GetSession() && !member->GetSession()->IsBot())
+                if (member && member->GetSession() && !member->GetSession()->IsHeadless())
                     return; // Yield completely to human party leader
             }
         }
@@ -2736,9 +2736,7 @@ namespace PvPLife
             if (event.Closing || !event.FullyPrepared || event.EventZone.Type != ActivityType::Duel)
                 continue;
 
-            float centerX = (event.EventZone.RallyX + event.EventZone.TargetX) * 0.5f;
-            float centerY = (event.EventZone.RallyY + event.EventZone.TargetY) * 0.5f;
-            float centerZ = (event.EventZone.RallyZ + event.EventZone.TargetZ) * 0.5f;
+            // (No local centroid needed: the leash check below uses RallyX/RallyY directly.)
             std::vector<uint32> available;
             for (Participant const& participant : event.Members)
             {

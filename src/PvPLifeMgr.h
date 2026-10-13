@@ -158,7 +158,7 @@ namespace PvPLife
         uint32 _tickSeconds = 20;
         uint32 _timerMs = 0;
         uint32 _startupElapsedMs = 0;
-        bool _startupDelayLogged = false;
+        // (reserved)
         uint32 _maxActiveEvents = 0;
 
         // Bot selection & filtering
@@ -283,7 +283,7 @@ namespace PvPLife
         // Active state
         uint64 _nextEventId = 1;
         uint64 _nextPairId = 1;
-        uint64 _nextAssignmentId = 1;
+        // (reserved)
         std::vector<ActiveEvent> _activeEvents;
         std::vector<MoveStep> _moveQueue;
         std::vector<DuelStep> _duelQueue;

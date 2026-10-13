@@ -6,7 +6,7 @@
 
 void AddPvPLifeScripts();
 
-void Addmod_playerbots_pvp_lifeScripts()
+void Addmod_playerbots_auctioneer_pvp_lifeScripts()
 {
     AddPvPLifeScripts();
 }

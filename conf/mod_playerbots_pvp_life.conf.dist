@@ -1,4 +1,39 @@
 ###################################################################################################
+# Playerbots PvP Life Module Configuration — FORK
+#
+# This is a fork of mod-playerbots-pvp-life, maintained alongside:
+#
+#   1. azerothcore-wotlk-playerbots
+#      https://github.com/electrobutterfly/azerothcore-wotlk-playerbots
+#
+#   2. mod-playerbots-auctioneer
+#      https://github.com/electrobutterfly/mod-playerbots-auctioneer
+#      Which provides auction house and vendor automation for the bot
+#      population. That module is a heavily modified fork of mod-playerbots
+#      and diverges from upstream in several interfaces this module touches:
+#      TravelMgr, PlayerbotAIConfig, NewRpgInfo, ItemUsageValue, and PlayerbotAI
+#      itself (new fields, new methods, changed semantics in a few places).
+#
+# WHY THIS FORK EXISTS
+#
+# Upstream mod-playerbots-pvp-life is developed against upstream mod-playerbots.
+# The playerbot fork this module targets has refactored several of the same
+# functions and changed the shape of the PlayerbotAI interface that PvP Life
+# uses during bot selection, movement, and activity gating. Building this
+# module unmodified against the fork produces either compile failures or silent
+# misbehaviour (PvP Life selecting a bot that the auctioneer subsystem has just
+# borrowed for an AH visit, for example).
+#
+# The settings below are otherwise unchanged from upstream. Where a default
+# has been adjusted for the target fork, the comment on that setting says so
+# explicitly.
+#
+# As upstream PvP Life and this fork's other modules continue to evolve, this
+# fork needs to be re-synced. See README.md for the sync procedure.
+#
+###################################################################################################
+
+###################################################################################################
 # Playerbots PvP Life Module Configuration
 ###################################################################################################
 

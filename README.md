@@ -35,7 +35,7 @@ Fork maintainer: [Electrobutterfly](https://github.com/electrobutterfly?tab=repo
 
 An AzerothCore + mod-playerbots-auctioneer module focused on making the open world feel alive through persistent, configurable bot PvP, world skirmishes, reactive raid defenses, and capital gate duel rituals.
 
-**Single Installed Module Requirement:** Users install only `mod-playerbots-auctioneer-pvp-life` alongside [AzerothCore](https://github.com/electrobutterfly/azerothcore-wotlk-playerbots) and [mod-playerbots-auctioneer](). `mod-playerbots-world-pvp` is completely unnecessary and should not be installed or enabled.
+**Single Installed Module Requirement:** Users install only `mod-playerbots-auctioneer-pvp-life` alongside [AzerothCore](https://github.com/electrobutterfly/azerothcore-wotlk-playerbots) and [mod-playerbots-auctioneer](https://github.com/electrobutterfly/mod-playerbots-auctioneer). `mod-playerbots-world-pvp` is completely unnecessary and should not be installed or enabled.
 
 ---
 
@@ -70,8 +70,8 @@ An AzerothCore + mod-playerbots-auctioneer module focused on making the open wor
 
 ## Requirements
 
-- [`azerothcore-wotlk-playerbots` fork](https://github.com/electrobutterfly/mod-playerbots-auctioneer)
-  *(Do **not** clone `mod-playerbots/azerothcore-wotlk` — the Playerbots branch alone is not compatible with this fork.)*
+- [`azerothcore-wotlk-playerbots` fork](https://github.com/electrobutterfly/azerothcore-wotlk-playerbots)
+  *(Do **not** clone `mod-playerbots/azerothcore-wotlk` — the Playerbots branch alone may not be compatible with this fork.)*
 - The playerbot module from the same fork *(installed as `modules/mod-playerbots-auctioneer`)*
 - C++17-capable build environment (used by AzerothCore).
 - MySQL database (AzerothCore baseline).
@@ -80,7 +80,7 @@ An AzerothCore + mod-playerbots-auctioneer module focused on making the open wor
 
 ## Installation & Setup
 
-1. Place `mod-playerbots-pvp-life` into your `modules/` folder:
+1. Place `mod-playerbots-auctioneer-pvp-life` into your `modules/` folder:
    ```bash
    azerothcore-wotlk-playerbots/modules/mod-playerbots-auctioneer-pvp-life
 
